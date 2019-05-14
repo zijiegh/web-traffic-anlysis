@@ -1,0 +1,15 @@
+<configuration>
+
+<!-- thrift://<host_name>:<port> 默认端口是9083 -->
+<property>
+  <name>hive.metastore.uris</name>
+  <value>thrift://hmaster:9083</value>
+  <description>Thrift uri for the remote metastore. Used by metastore client to connect to remote metastore.</description>
+</property>
+<!--  hive表的默认存储路径 -->
+<property>
+  <name>hive.metastore.warehouse.dir</name>
+  <value>hdfs://hmaster:9999/user/hive/warehouse</value>
+  <description>location of default database for the warehouse</description>
+</property>
+</configuration>
